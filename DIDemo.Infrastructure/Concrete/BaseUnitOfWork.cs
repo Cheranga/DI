@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using DIDemo.Infrastructure.Interfaces;
 
-namespace DIDemo.Infrastructure
+namespace DIDemo.Infrastructure.Concrete
 {
     public class BaseUnitOfWork : IUoW
     {

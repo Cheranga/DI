@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DIDemo.Business;
+using DIDemo.Business.Models;
 using DIDemo.DAL_Memory;
+using DIDemo.DAL_Memory.Repositories;
 using DIDemo.Infrastructure;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -78,7 +80,6 @@ namespace DIDemo.Tests
             //
             Assert.IsNull(customer);
         }
-
 
         [TestMethod]
         public void Test_Add_Using_a_Proper_Entity()

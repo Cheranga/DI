@@ -5,7 +5,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DIDemo.Business;
+using DIDemo.Business.Models;
 using DIDemo.Infrastructure;
+using DIDemo.Infrastructure.Interfaces;
 
 namespace DIDemo.Controllers
 {

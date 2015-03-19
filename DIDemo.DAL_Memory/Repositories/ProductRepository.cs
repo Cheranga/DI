@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using DIDemo.Business;
+using DIDemo.Business.Models;
 
-namespace DIDemo.DAL_Memory
+namespace DIDemo.DAL_Memory.Repositories
 {
     public class ProductRepository : BaseRepository<Product>
     {

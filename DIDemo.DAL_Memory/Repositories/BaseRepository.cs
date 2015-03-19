@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DIDemo.Business;
 using DIDemo.Infrastructure;
+using DIDemo.Infrastructure.Interfaces;
 
-namespace DIDemo.DAL_Memory
+namespace DIDemo.DAL_Memory.Repositories
 {
     public class BaseRepository<T> : IRepository<T> where T : class, IEntity
     {

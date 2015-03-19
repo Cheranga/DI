@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Runtime.InteropServices.ComTypes;
-
-namespace DIDemo.Infrastructure
+﻿namespace DIDemo.Infrastructure.Interfaces
 {
     public interface IRepositoryFactory
     {

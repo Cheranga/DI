@@ -39,12 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IEntity.cs" />
-    <Compile Include="IRepository.cs" />
-    <Compile Include="IRepositoryFactory.cs" />
-    <Compile Include="IUoW.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IRepositoryFactory.cs" />
+    <Compile Include="Interfaces\IUoW.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BaseUnitOfWork.cs" />
+    <Compile Include="Concrete\BaseUnitOfWork.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

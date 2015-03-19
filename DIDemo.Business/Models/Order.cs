@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DIDemo.Infrastructure;
+using DIDemo.Infrastructure.Interfaces;
 
-namespace DIDemo.Business
+namespace DIDemo.Business.Models
 {
     public class Order : IEntity
     {

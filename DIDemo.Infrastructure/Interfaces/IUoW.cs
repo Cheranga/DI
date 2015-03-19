@@ -1,4 +1,4 @@
-﻿namespace DIDemo.Infrastructure
+﻿namespace DIDemo.Infrastructure.Interfaces
 {
     public interface IUoW
     {
