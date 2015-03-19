@@ -43,9 +43,9 @@ namespace DIDemo.DAL_Memory.RepositoryFactory
             this.repositoriesMappedByType.Add(typeof (Customer), new CustomerRepository(new List<Customer>
             {
                 new Customer {Id = 1, Name = "Cheranga Hatangala"},
-                new Customer {Id = 2, Name = "Muralidhar Mishra"},
-                new Customer {Id = 3, Name = "Van Nguyen"},
-                new Customer {Id = 4, Name = "Michael Hinn"}
+                new Customer {Id = 2, Name = "Randika Jayasekara"},
+                new Customer {Id = 3, Name = "Nadun Rathnayake"},
+                new Customer {Id = 4, Name = "Ivy Lee"}
             }));
         }
 
