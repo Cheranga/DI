@@ -4,33 +4,26 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DIDemo.Business;
 using DIDemo.Infrastructure;
 
 namespace DIDemo.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger logger;
+        private readonly IUoW uow;
 
-        public HomeController(ILogger logger )
+        public HomeController(IUoW uow )
         {
-            this.logger = logger;
+            this.uow = uow;
         }
 
         public ActionResult Index()
         {
-            var stopWatch = new Stopwatch();
-            stopWatch.Start();
+            var customerRepository = this.uow.GetRepository<Customer>();
+            var customers = customerRepository.GetAll();
 
-            ViewBag.Title = "Home Page";
-
-            stopWatch.Stop();
-
-            this.logger.Log(string.Format("Time taken - {0}", stopWatch.Elapsed.TotalSeconds));
-            
-            return View();
-
-            
+            return View(customers);
         }
     }
 }

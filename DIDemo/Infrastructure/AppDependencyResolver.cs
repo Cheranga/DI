@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http.Dependencies;
+using DIDemo.DAL_Memory;
 using Ninject;
 using Ninject.Syntax;
 using Ninject.Web.Common;
@@ -26,7 +27,8 @@ namespace DIDemo.Infrastructure
             //
             // For the whole application there will be only one logger instance
             //
-            this.kernel.Bind<ILogger>().To<Logger>().InSingletonScope();
+            this.kernel.Bind<IRepositoryFactory>().To<RepositoryFactory>().InSingletonScope();
+            this.kernel.Bind<IUoW>().To<BaseUnitOfWork>().InRequestScope();
         }
 
         public IDependencyScope BeginScope()

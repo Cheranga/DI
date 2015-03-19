@@ -64,8 +64,7 @@ namespace DIDemo.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            var appDependencyResolver = new AppDependencyResolver(kernel);
-            GlobalConfiguration.Configuration.DependencyResolver = appDependencyResolver;
+            DIDemoConfig.Register(kernel);
         }        
     }
 }

@@ -132,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DIDemoConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -225,7 +226,20 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DIDemo.Business\DIDemo.Business.csproj">
+      <Project>{45D33C08-BABE-4F7E-82DA-B137D2251D93}</Project>
+      <Name>DIDemo.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DIDemo.DAL_Memory\DIDemo.DAL_Memory.csproj">
+      <Project>{2D336E78-F261-4F69-B557-5FE076334FD2}</Project>
+      <Name>DIDemo.DAL_Memory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DIDemo.Infrastructure\DIDemo.Infrastructure.csproj">
+      <Project>{A53A61E9-E995-416D-903C-FA67FB317566}</Project>
+      <Name>DIDemo.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
